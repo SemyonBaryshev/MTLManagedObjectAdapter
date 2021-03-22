@@ -10,8 +10,8 @@
 
 #import <Mantle/Mantle.h>
 
-#import "EXTScope.h"
-#import "EXTRuntimeExtensions.h"
+#import "mtl_moa_EXTScope.h"
+#import "mtl_moa_EXTRuntimeExtensions.h"
 
 #import "MTLManagedObjectAdapter.h"
 
@@ -771,7 +771,7 @@ static SEL MTLSelectorWithKeyPattern(NSString *key, const char *suffix) {
 	invocation.target = self;
 	invocation.selector = selector;
 	[invocation invoke];
-	
+
 	__unsafe_unretained id result = nil;
 	[invocation getReturnValue:&result];
 	return result;
@@ -779,7 +779,7 @@ static SEL MTLSelectorWithKeyPattern(NSString *key, const char *suffix) {
 
 + (NSValueTransformer *)transformerForModelPropertiesOfObjCType:(const char *)objCType {
 	NSParameterAssert(objCType != NULL);
-	
+
 	return nil;
 }
 
