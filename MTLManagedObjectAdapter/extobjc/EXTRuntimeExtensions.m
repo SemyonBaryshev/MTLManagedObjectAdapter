@@ -7,7 +7,7 @@
 //  Released under the MIT license.
 //
 
-#import "EXTRuntimeExtensions.h"
+#import "mtl_moa_EXTRuntimeExtensions.h"
 
 mtl_moa_propertyAttributes *mtl_moa_copyPropertyAttributes (objc_property_t property) {
     const char * const attrString = property_getAttributes(property);

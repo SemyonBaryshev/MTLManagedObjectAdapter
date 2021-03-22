@@ -7,7 +7,7 @@
 //  Released under the MIT license.
 //
 
-#import "EXTScope.h"
+#import "mtl_moa_EXTScope.h"
 
 void mtl_moa_executeCleanupBlock (__strong mtl_moa_cleanupBlock_t *block) {
     (*block)();
